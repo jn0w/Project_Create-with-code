@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody rb;
+    public ParticleSystem  jumpParticles;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,5 +37,7 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
+        jumpParticles.Play();
     }
 }
