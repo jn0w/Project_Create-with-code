@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour
 {
-    private Goalie goalkeeper;
+    public Goalie goalkeeper;
 
-    void Start()
+    public void Start()
     {
         goalkeeper = FindObjectOfType<Goalie>();
     }
 
-    void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Ball")) // Assuming the ball is tagged as "Ball"
         {

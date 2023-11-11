@@ -7,17 +7,23 @@ public class Goalie : MonoBehaviour
 {
     public float moveDistance = 5f;
     public float defaultMoveSpeed = 2f;
-    public float speedIncreasePerGoal = 1f;
+    public float speedIncreasePerGoal = 5f;
 
     private Vector3 startPos;
     private bool movingRight = true;
 
-    void Start()
+    public void Awake()
+    {
+        Debug.Log("Awake - Initial Goalie Speed: " + defaultMoveSpeed);
+    }
+
+
+    public void Start()
     {
         startPos = transform.position;
     }
 
-    void Update()
+    public void Update()
     {
         float currentMoveSpeed = movingRight ? defaultMoveSpeed : -defaultMoveSpeed;
 
@@ -31,17 +37,28 @@ public class Goalie : MonoBehaviour
         }
     }
 
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Ball"))
+        {
+            IncreaseSpeedAndResetGame();
+        }
+    }
+
     public void IncreaseSpeedAndResetGame()
     {
-        Debug.Log("IncreaseSpeedAndResetGame called");
-
         // Increase speed for the next round
         defaultMoveSpeed += speedIncreasePerGoal;
+
+        // Log the speed increase for debugging
+        Debug.Log("Goalie speed increased to: " + defaultMoveSpeed);
 
         // Reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
+
+
 
 
 
