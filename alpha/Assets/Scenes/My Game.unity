@@ -5000,7 +5000,7 @@ GameObject:
   - component: {fileID: 196283355}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5927,6 +5927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2e3f9fcf6d3d4468f50b4f3be34890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalkeeper: {fileID: 0}
 --- !u!1 &1766775631
 GameObject:
   m_ObjectHideFlags: 0

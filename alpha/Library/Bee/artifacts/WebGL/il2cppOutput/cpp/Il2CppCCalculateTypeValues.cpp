@@ -28457,6 +28457,7 @@ struct PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95  : public Mono
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___jumpParticles;
 	float ___speed;
 	float ___jumpForce;
+	bool ___isGrounded;
 	float ___horizontalInput;
 	float ___forwardInput;
 };

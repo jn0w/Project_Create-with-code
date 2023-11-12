@@ -4857,6 +4857,7 @@ struct PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95  : public Mono
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___jumpParticles;
 	float ___speed;
 	float ___jumpForce;
+	bool ___isGrounded;
 	float ___horizontalInput;
 	float ___forwardInput;
 };
@@ -7925,9 +7926,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3958[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3959[5] = 
 {
 	static_cast<int32_t>(offsetof(Goalie_tB69DAFCF44CC159E7354B373641046E1C24A6AAB, ___moveDistance)),static_cast<int32_t>(offsetof(Goalie_tB69DAFCF44CC159E7354B373641046E1C24A6AAB, ___defaultMoveSpeed)),static_cast<int32_t>(offsetof(Goalie_tB69DAFCF44CC159E7354B373641046E1C24A6AAB, ___speedIncreasePerGoal)),static_cast<int32_t>(offsetof(Goalie_tB69DAFCF44CC159E7354B373641046E1C24A6AAB, ___startPos)),static_cast<int32_t>(offsetof(Goalie_tB69DAFCF44CC159E7354B373641046E1C24A6AAB, ___movingRight)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3961[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3961[7] = 
 {
-	static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___rb)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___jumpParticles)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___speed)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___jumpForce)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___horizontalInput)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___forwardInput)),};
+	static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___rb)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___jumpParticles)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___speed)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___jumpForce)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___isGrounded)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___horizontalInput)),static_cast<int32_t>(offsetof(PlayerController_t7E8D7042FA2D0DFEC54A1FCDF395161D88DAAE95, ___forwardInput)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3962[5] = 
 {
 	static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___FilePathsData)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TypesData)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TotalTypes)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___TotalFiles)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E, ___IsEditorOnly)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
