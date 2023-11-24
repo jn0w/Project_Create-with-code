@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallManager : MonoBehaviour
 {
-    public static BallManager Instance; // Singleton instance
+    public static BallManager Instance; 
 
     private Vector3 initialBallPosition; // Store initial ball position
     private GameObject ballObject; // Reference to the current ball object

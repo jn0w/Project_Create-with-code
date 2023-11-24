@@ -1,0 +1,20 @@
+Contributions
+
+Jakub Nowosielski B00153676:
+Map:Unit 2 lab create with code
+GoalKeeper:Create with code unit 2 
+Player Movement:Create with code unit 4 + unit 3 for particles
+Main Menu, Instructions menu:Create with code unit 5+ unit 3 for soundeffects  
+Score:Create with code unit 5 
+
+Dawid Kaluzny B00150844:
+Ball spawn and management:Create with code unit 4 
+Game over screen:Create with code unit 5 
+Restart button:Create with code unit 5 
+Timer:Create with code unit 5 
+
+main menu music:
+https://www.youtube.com/watch?v=jrB6DLpIDaA
+
+main menu background:
+https://pngtree.com/free-backgrounds-photos/football

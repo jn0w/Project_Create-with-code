@@ -15,7 +15,7 @@ public class Goalie : MonoBehaviour
 
     public void Awake()
     {
-        Debug.Log("Awake - Initial Goalie Speed: " + defaultMoveSpeed);
+        Debug.Log("Awake - Initial Goalie Speed: " + defaultMoveSpeed); // check if the speed is correct
     }
 
 
